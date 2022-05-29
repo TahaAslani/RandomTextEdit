@@ -5,4 +5,6 @@ Add noise to text with a given probability.
 * Randomly replace a word with a random word
 * Randomly permute text
 
+Requirment: NumPy
+
 Results are 100% reproducable with a random seed
