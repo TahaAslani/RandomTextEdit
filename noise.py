@@ -37,13 +37,8 @@ def delete_random_words(text, probability):
                                    p=[probability, 1-probability])
         
     ret = [token for i, token in enumerate(text_split) if random_mask[i]]
-
-    if len(ret)>0:
-        output = " ".join(ret)
-    else:
-        output = " " # If everything is deleted, only return a space
     
-    return output 
+    return " ".join(ret)
 
 def replace_random_words(text, probability):
     
