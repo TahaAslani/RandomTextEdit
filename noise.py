@@ -27,6 +27,7 @@ def generate_random_wrod():
     
     return word
 
+
 def delete_random_words(text, probability):
 
     text_split = text.split()
@@ -51,6 +52,7 @@ def replace_random_words(text, probability):
     
     return " ".join(text_split)
 
+
 def insert_random_words(text, probability):
     
     text_split = text.split()
@@ -67,7 +69,8 @@ def insert_random_words(text, probability):
         i += 1
     
     return " ".join(text_split)
-    
+
+
 def random_permutation(text):
     
     text_split = text.split()
