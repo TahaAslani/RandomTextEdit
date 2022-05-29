@@ -1,6 +1,4 @@
-import pandas as pd
 import numpy as np
-import random
 import os
 
 model_path = '/ifs/groups/liangGrp/tv349/PharmaBERT/DailyMed/InitialModel/bert-base-cased'
