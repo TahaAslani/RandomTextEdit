@@ -14,36 +14,48 @@ f.close()
 np.random.seed(random_seed)
 
 def generate_random_wrod():
+    
     found_word = False
+    
     while not found_word:
+        
         random_number = np.random.randint(0,len(words))
         word = words[random_number]
+        
         word = word.replace('\n', '')
+        
         if not word.startswith('##'):
             found_word = True
+    
     return word
 
 def delete_random_words(text, probability):
 
     text_split = text.split()
+    
     random_mask = np.random.choice(a=[False, True], size=(len(text_split)), \
                                    p=[probability, 1-probability])
+        
     ret = [token for i, token in enumerate(text_split) if random_mask[i]]
 
     if len(ret)>0:
         output = " ".join(ret)
     else:
         output = " " # If everything is deleted, only return a space
+    
     return output 
 
 def replace_random_words(text, probability):
     
     text_split = text.split()
+    
     random_array = np.random.choice(a=[False, True], size=(len(text_split)), \
                                p=[1-probability, probability])
+        
     for i,replace in enumerate(random_array):
         if replace:
             text_split[i] = generate_random_wrod()
+    
     return " ".join(text_split)
 
 def insert_random_words(text, probability):
@@ -57,8 +69,16 @@ def insert_random_words(text, probability):
         
         if replace:
             text_split = text_split[:i] + [generate_random_wrod()] + text_split[i:]
-            
-        print(i)
-        
+            i += 1
+
+        i += 1
+    
     return " ".join(text_split)
     
+def random_permutation(text):
+    
+    text_split = text.split()
+    
+    perm_list = np.random.permutation(text_split)
+    
+    return " ".join(perm_list)
