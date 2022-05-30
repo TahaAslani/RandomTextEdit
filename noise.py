@@ -1,15 +1,19 @@
 import numpy as np
 
 random_seed = 42
-
-vocab_file = 'vocab.txt'
-f = open(vocab_file,'r')
-words = f.readlines()
-f.close()
-
 np.random.seed(random_seed)
 
+def read_vocab():
+    vocab_file = 'vocab.txt'
+    f = open(vocab_file,'r')
+    words = f.readlines()
+    f.close()
+    return words
+
+
 def generate_random_wrod():
+    
+    words = read_vocab()
     
     found_word = False
     
