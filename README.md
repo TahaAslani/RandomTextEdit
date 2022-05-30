@@ -38,3 +38,8 @@ Randomly delete each word with probability of 50% and permute the words.
 ```
 python TextNoise.py --input_file in.txt --output_file out.txt --delete 0.5
 ```
+
+Randomly replace each word (with probability of 50%) with a ransom word and permute the words. 
+```
+python TextNoise.py -i in.txt -o out.txt -r 0.5 -p True 
+```
