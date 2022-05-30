@@ -8,3 +8,7 @@ Add noise to text with a given probability.
 Requirment: NumPy
 
 Results are 100% reproducable with a random seed
+
+Before you begin, download the list of words for random insertion
+
+bash 
