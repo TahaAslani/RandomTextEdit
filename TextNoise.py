@@ -36,8 +36,6 @@ f = open(args.input_file, 'r')
 lines = f.readlines()
 f.close()
 
-
-
 # Report
 if args.delete is not None:
     if args.verbose:
@@ -59,9 +57,11 @@ if args.seed is not None:
     if args.verbose:
         print('Set seed to ',args.seed)
 
-
+# Seed seed for reproducibility
 if args.seed is not None:
     set_seed(args.seed)
+
+# Apply noise to each line
 
 output_lines = []
 
