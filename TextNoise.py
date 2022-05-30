@@ -81,7 +81,7 @@ for line in lines:
     
     output_lines.append(line)
 
-# Reade data
+# Write data
 f = open(args.output_file, 'w')
 for line in output_lines:
     f.write(line)
