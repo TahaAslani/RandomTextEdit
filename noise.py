@@ -1,7 +1,7 @@
 import numpy as np
 
-random_seed = 42
-np.random.seed(random_seed)
+def set_seed(random_seed):
+	np.random.seed(random_seed)
 
 def read_vocab():
     vocab_file = 'vocab.txt'
