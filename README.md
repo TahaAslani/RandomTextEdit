@@ -11,9 +11,9 @@ Results are 100% reproducable with a random seed
 NumPy
 
 ## Install
-Install the repo
+Download the repo
 ```
-wget 
+wget https://github.com/TahaAslani/TextNoise/archive/refs/heads/main.zip
 ```
 
 Download the list of words for random insertion
