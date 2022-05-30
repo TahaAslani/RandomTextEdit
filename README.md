@@ -10,7 +10,12 @@ Results are 100% reproducable with a random seed
 ## Requirment
 NumPy
 
-## Before you begin
+## Install
+Install the repo
+```
+wget 
+```
+
 Download the list of words for random insertion
 ```
 bash download-vocab.sh
