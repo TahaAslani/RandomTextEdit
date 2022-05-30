@@ -10,5 +10,6 @@ Requirment: NumPy
 Results are 100% reproducable with a random seed
 
 Before you begin, download the list of words for random insertion
-
-bash 
+```
+bash download-vocab.sh
+```
