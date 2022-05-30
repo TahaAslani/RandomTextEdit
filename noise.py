@@ -1,10 +1,8 @@
 import numpy as np
-import os
 
-model_path = '/ifs/groups/liangGrp/tv349/PharmaBERT/DailyMed/InitialModel/bert-base-cased'
 random_seed = 42
 
-vocab_file = os.path.join(model_path,'vocab.txt')
+vocab_file = 'vocab.txt'
 f = open(vocab_file,'r')
 words = f.readlines()
 f.close()
