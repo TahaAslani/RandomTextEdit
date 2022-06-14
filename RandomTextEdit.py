@@ -6,7 +6,7 @@ Created on Mon May 30 01:54:10 2022
 @author: taha
 """
 
-from noise import *
+from RandomEdit import *
 import argparse
 
 parser = argparse.ArgumentParser()
