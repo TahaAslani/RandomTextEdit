@@ -9,9 +9,9 @@ Functions:
 * Randomly replace a word with a random word
 * Randomly permute text
 
-Results are 100% reproducable with a random seed.
+Results are 100% reproducible with a random seed.
 
-## Requirment
+## Requirement
 NumPy
 
 ## Install
@@ -33,17 +33,17 @@ bash download-vocab.sh
 
 ## Usage
 
-Insert a random word between each 2 words with probability of 50% and permute the words. 
+Insert a random word between every 2 words with a probability of 50% and permute the words. 
 ```
 python RandomTextEdit.py --input_file in.txt --output_file out.txt --insert 0.5 --permutation True --seed 42 --verbose True
 ```
 
-Randomly delete each word with probability of 50% and permute the words. 
+Randomly delete each word with a probability of 50% and permute the words. 
 ```
 python RandomTextEdit.py --input_file in.txt --output_file out.txt --delete 0.5
 ```
 
-Randomly replace each word (with probability of 50%) with a ransom word and permute the words. 
+Randomly replace each word (with a probability of 50%) with a ransom word and permute the words. 
 ```
 python RandomTextEdit.py -i in.txt -o out.txt -r 0.5 -p True 
 ```
